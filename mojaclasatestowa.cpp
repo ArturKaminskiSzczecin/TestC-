@@ -14,7 +14,7 @@ class User{
 		std::cout << this->name << ": " << this->age << std::endl;
                 }
 	};
-	User::userAsk(){
+	void User::userAsk(){
 		std::cout << "What is his age" << std::endl;
 	}
 int main(){
