@@ -100,7 +100,7 @@ void classifyStars(struct star mystars[], int a){
 		else if((l> pow(10, 5)) && (l < pow(10,6))&&(r > 100* sun_r)){
 			cl = 'S';
 		}
-		else if(r > 0.01* sun_r){
+		else if(r < 0.01* sun_r){
 			cl = 'W';
 		}
 		else{
