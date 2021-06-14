@@ -24,6 +24,7 @@ char *decode_morse(const char* morse_code) {
 		x=0;
 	}
  // printf("\n");
+ return ascii_return;
 }
 int main(){
 	const char* sos = "--- ... ---";
