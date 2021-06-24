@@ -1,15 +1,15 @@
 #include <iostream>
 #include <string>
-using namespace std;
+//using namespace std;
 
 int main() {
 	// Complete the program
-    string a;
+	std::string a;
     char x;
-    string b= "";
+    std::string b= "";
     int i;
 
-    while( cin >> x)
+    while( std::cin >> x)
     {
         if ( x!= '\n' )
 	{
@@ -17,8 +17,8 @@ int main() {
         	a[i] = x;
 	    	i++;
         }
-        cout << a.length() << endl;
-	cout << a << endl;
+	std::cout << a.length() << std::endl;
+	std::cout << a << std::endl;
         break;
     }
     
