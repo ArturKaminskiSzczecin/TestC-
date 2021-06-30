@@ -7,9 +7,10 @@ std::string encrypt(std::string text, int n)
     int x = 0, i=0;
     char text1[l];
     int y = l/2;
+    int count = 0;
     std::cout << "text encrypting" << std::endl;
     std::cout << text << std::endl;
-    if(n > 0){
+    if(count < n){
             while(text[i] != '\0'){
                 //std::cout << "while started" << std::endl;
                 if ((i %2) != 0){
@@ -25,8 +26,8 @@ std::string encrypt(std::string text, int n)
             i =0;
                 text1[y] = '\0';
                 std::cout << n << '\n';
-                n--;
-                encrypt(text1,n);
+                count++;
+                encrypt(text1,--n);
     }
     else {
         for(int j =0; j <l; j++){
