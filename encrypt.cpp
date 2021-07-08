@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string>
-#include<cstring>
 std::string encrypt(std::string text, int n)
 {
     int l = text.length();
